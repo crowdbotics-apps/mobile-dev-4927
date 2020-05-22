@@ -6,34 +6,36 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0002_load_initial_data'),
-        ('users', '0001_initial'),
+        ("home", "0002_load_initial_data"),
+        ("users", "0001_initial"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='user',
-            name='jhghjgfw',
-            field=models.ManyToManyField(blank=True, related_name='user_jhghjgfw', to='home.HomePage'),
+            model_name="user",
+            name="jhghjgfw",
+            field=models.ManyToManyField(
+                blank=True, related_name="user_jhghjgfw", to="home.HomePage"
+            ),
         ),
         migrations.AddField(
-            model_name='user',
-            name='jhgkjhgkjhgkjhgkjg',
+            model_name="user",
+            name="jhgkjhgkjhgkjhgkjg",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='user',
-            name='jhgsafakd',
+            model_name="user",
+            name="jhgsafakd",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='user',
-            name='jzhgfhsfkjghrf',
+            model_name="user",
+            name="jzhgfhsfkjghrf",
             field=models.BigIntegerField(blank=True, null=True),
         ),
         migrations.AlterField(
-            model_name='user',
-            name='name',
+            model_name="user",
+            name="name",
             field=models.CharField(blank=True, max_length=255, null=True),
         ),
     ]

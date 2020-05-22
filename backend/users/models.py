@@ -10,9 +10,6 @@ class User(AbstractUser):
     jhgkjhgkjhgkjhgkjg = models.BigIntegerField(null=True, blank=True,)
     jzhgfhsfkjghrf = models.BigIntegerField(null=True, blank=True,)
     jhgsafakd = models.BigIntegerField(null=True, blank=True,)
-    jhghjgfw = models.ManyToManyField(
-        "home.HomePage", blank=True, related_name="user_jhghjgfw",
-    )
 
     def get_absolute_url(self):
         return reverse("users:detail", kwargs={"username": self.username})
